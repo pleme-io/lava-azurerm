@@ -1,0 +1,220 @@
+{
+  "format_version": "1.0",
+  "provider_schemas": {
+    "registry.terraform.io/azurerm/azurerm": {
+      "provider": {
+        "version": 0,
+        "attributes": {},
+        "block_types": {}
+      },
+      "resource_schemas": {
+        "azurerm_resource_group": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "location": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "tags": {
+              "type": [
+                "map",
+                "string"
+              ],
+              "optional": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "azurerm_kubernetes_cluster": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "location": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "resource_group_name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "dns_prefix": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "kubernetes_version": {
+              "type": "string",
+              "optional": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "azurerm_storage_account": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "resource_group_name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "location": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "account_tier": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "account_replication_type": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "azurerm_virtual_network": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "location": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "resource_group_name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "address_space": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "azurerm_subnet": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "resource_group_name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "virtual_network_name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "address_prefixes": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "azurerm_key_vault": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "location": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "resource_group_name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "tenant_id": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "sku_name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        }
+      },
+      "data_source_schemas": {}
+    }
+  }
+}
