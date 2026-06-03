@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "cargo_lock_sha256": "bc16968d27e0fa0440465333a8e5ea6381388f9b6df5c01c58c3a4fc8ce3cbae",
+  "target_resolves": {
+    "base": {
+      "lava-azurerm-0.1.1": {
+        "runtime_dependencies": [],
+        "build_dependencies": [],
+        "features": []
+      }
+    },
+    "targets": {
+      "aarch64-apple-darwin": {
+        "overrides": {}
+      },
+      "x86_64-apple-darwin": {
+        "overrides": {}
+      },
+      "x86_64-unknown-linux-gnu": {
+        "overrides": {}
+      },
+      "x86_64-unknown-linux-musl": {
+        "overrides": {}
+      },
+      "aarch64-unknown-linux-gnu": {
+        "overrides": {}
+      },
+      "aarch64-unknown-linux-musl": {
+        "overrides": {}
+      }
+    }
+  },
+  "per_crate": {
+    "lava-azurerm-0.1.1": {
+      "edition": "2024",
+      "lib_target": {
+        "name": "lava_azurerm",
+        "path": "src/lib.rs"
+      }
+    }
+  },
+  "git_nar_sha256": {},
+  "flake_metadata": {}
+}
