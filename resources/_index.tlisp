@@ -4,9 +4,7 @@
 (deflava-provider
   :azurerm
   :resources
-  (:azurerm-key-vault
-    :azurerm-kubernetes-cluster
-    :azurerm-resource-group
-    :azurerm-storage-account
-    :azurerm-subnet
-    :azurerm-virtual-network))
+  (
+    :azurerm-key-vault :azurerm-kubernetes-cluster
+    :azurerm-resource-group :azurerm-storage-account
+    :azurerm-subnet :azurerm-virtual-network))

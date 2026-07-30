@@ -9,10 +9,4 @@
   ((:id :type string :computed #t :doc "")
     (:location :type string :required #t :doc "")
     (:name :type string :required #t :doc "")
-    (:tags
-      :type
-      (map string)
-      :optional
-      #t
-      :doc
-      "")))
+    (:tags :type (map string) :optional #t :doc "")))
